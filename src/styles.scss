@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~font-awesome/css/font-awesome.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    transform: 0.3;
+    z-index: 1000;
+
+    button{
+        align-self: flex-end;
+    }
+    a{
+        padding: 10px;
+        text-decoration: none;
+
+        &:hover{
+            background: white;
+        }
+    }
+}
+
+.active{
+    background: white;
+}
+
+footer{
+    font-weight: 300;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: red;
+    text-align: center;
+}
